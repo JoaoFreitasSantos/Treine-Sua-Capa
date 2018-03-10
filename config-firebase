@@ -1,0 +1,13 @@
+<script src="https://www.gstatic.com/firebasejs/4.11.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyBOgHHZu8rRCvSWoCXoRMYChn1zKFbWFmE",
+    authDomain: "treine-sua-capa.firebaseapp.com",
+    databaseURL: "https://treine-sua-capa.firebaseio.com",
+    projectId: "treine-sua-capa",
+    storageBucket: "treine-sua-capa.appspot.com",
+    messagingSenderId: "164271021925"
+  };
+  firebase.initializeApp(config);
+</script>
