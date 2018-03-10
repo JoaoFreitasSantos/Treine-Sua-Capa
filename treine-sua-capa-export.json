@@ -1,0 +1,50 @@
+{
+  "locais" : [{
+    "x" : "-12.981102",
+    "y" : "-38.456258",
+    "nome" : "Av. Tancredo Neves, 1186 - Caminho das Árvores",
+    "cidade" : "Salvador - BA",
+    "bairro" : "Pituba"
+  },{
+    "x" : "-12.979517",
+    "y" : "-38.447974",
+    "nome" : "Praça Vale dos Rios",
+    "cidade" : "Salvador - BA",
+    "bairro" : "Stiep"
+  },{
+    "x" : "-12.981336",
+    "y" : "-38.459982",
+    "nome" : "Alameda Javanesas, 60 - Caminho das Árvores",
+    "cidade" : "Salvador - BA",
+    "bairro" : "Pituba"
+  }],
+  "pessoa" : [{
+    "idade" : 26,
+    "nome" : "Otavio Melo",
+    "sexo" : "Masculino"
+  },{
+    "idade" : 20,
+    "nome" : "Luiz Claudio",
+    "sexo" : "Masculino"
+  },{
+    "idade" : 19,
+    "nome" : "Bianca Ferreira",
+    "sexo" : "Feminino"
+  }],
+  "rotas" : [{
+    "chegadax" : "-12.986988",
+    "chegaday" : "-38.452396",
+    "partidax" : "-12.981102",
+    "partiday" : "-38.456258"
+  },{
+    "chegadax" : "-12.996145",
+    "chegaday" : "-38.473224",
+    "partidax" : "-12.980110",
+    "partiday" : "-38.455977"
+  },{
+    "chegadax" : "-12.997778",
+    "chegaday" : "-38.446989",
+    "partidax" : "-12.981261",
+    "partiday" : "-38.456173"
+  }]
+}
