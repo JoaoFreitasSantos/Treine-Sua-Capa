@@ -1,0 +1,10 @@
+version: '2.1'
+
+services:
+  docker-angular-cli:
+    image: johnpapa/angular-cli
+    build: .
+    volumes:
+      - ".:/app"
+    environment:
+      NODE_ENV: 
