@@ -3,3 +3,19 @@ footer {
     color: white;
     padding: 15px;
 }
+
+.bttAmigos{
+    background-color: #5bc0de;
+    color: white;
+}
+
+.bttProfissional{
+    background-color: #f0ad4e;
+    color: white;
+}
+
+.bttSaude{
+    background-color: #5cb85c;
+    color: white;
+}
+

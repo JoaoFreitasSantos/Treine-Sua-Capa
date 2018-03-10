@@ -5,8 +5,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
 
 </head>
 <body>
@@ -24,10 +26,10 @@
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
         <li class="active"><a href="#">Home</a></li>
-        <li><a href="#">Metas</a></li>
+        <li><a data-toggle="modal" data-target="#ModalPadrao3" class="btn">Metas</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#"><span class="glyphicon glyphicon-user"></span> My Account</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Meu Altered Body</a></li>
       </ul>
     </div>
   </div>
@@ -37,25 +39,36 @@
   <div class="row">
     <div class="col-sm-3 well">
       <div class="well">
-        <p><a href="#">My Profile</a></p>
+        <p><a href="#">Otávio Silva, 48</a></p>
         <img src="assets/mr. some body1.jpg" class="img-circle" height="65" width="65" alt="Avatar">
-      </div>
-      <div class="well">
+        <p></p>
+        <div class = "well">
+          <p><strong>Level: </strong> 6</p>
+        </div>
         <p><a href="#"><strong>Conquistas</strong></a></p>
         <p>
-          <span class="label label-default">Jiu Jitsu</span>
           <span class="label label-primary">Musculação</span>
+          <img src="assets/medalha prata.png" height="25" width="25" >
+        </p>
+        <p>
           <span class="label label-success">Caminhada</span>
+          <img src="assets/medalha Ouro.png" height="25" width="25">
         </p>
       </div>
       <div class="alert alert-success fade in">
         <a href="#" class="close" data-dismiss="alert" aria-label="close">×</a>
-        <p><strong>Ey!</strong></p>
-        People are looking at your profile. Find out who.
+        <p><strong>Aviso saúde</strong></p>
+        Sua saúde não é brincadeira. Procure um dos nossos profissionais de saúde, para uma melhor experiência 
       </div>
-      <p><a href="#">Link</a></p>
-      <p><a href="#">Link</a></p>
-      <p><a href="#">Link</a></p>
+      <div class="well bttAmigos">
+        <p><a href="#"><strong>Amigos</strong></a></p>
+      </div>
+      <div class="well bttProfissional">
+        <p><a href="#"><strong>Profissionais</strong></a></p>
+      </div>
+      <div class="well bttSaude">
+        <p><a href="#"><strong>Saúde</strong></a></p>
+      </div>
     </div>
     <div class="col-sm-7">
     
@@ -76,7 +89,7 @@
         <div class="col-sm-3">
           <div class="well">
            <p>John</p>
-           <img src="bird.jpg" class="img-circle" height="55" width="55" alt="Avatar">
+           <img src="assets/pessoa3.jpg" class="img-circle" height="55" width="55" alt="Avatar">
           </div>
         </div>
         <div class="col-sm-9">
@@ -89,7 +102,7 @@
         <div class="col-sm-3">
           <div class="well">
            <p>Bo</p>
-           <img src="bandmember.jpg" class="img-circle" height="55" width="55" alt="Avatar">
+           <img src="assets/pessoa5.jpg" class="img-circle" height="55" width="55" alt="Avatar">
           </div>
         </div>
         <div class="col-sm-9">
@@ -102,7 +115,7 @@
         <div class="col-sm-3">
           <div class="well">
            <p>Jane</p>
-           <img src="bandmember.jpg" class="img-circle" height="55" width="55" alt="Avatar">
+           <img src="assets/pessoa2.jpg" class="img-circle" height="55" width="55" alt="Avatar">
           </div>
         </div>
         <div class="col-sm-9">
@@ -115,7 +128,7 @@
         <div class="col-sm-3">
           <div class="well">
            <p>Anja</p>
-           <img src="bird.jpg" class="img-circle" height="55" width="55" alt="Avatar">
+           <img src="assets/pessoa4.jpg" class="img-circle" height="55" width="55" alt="Avatar">
           </div>
         </div>
         <div class="col-sm-9">
@@ -127,26 +140,39 @@
     </div>
     <div class="col-sm-2 well">
       <div class="thumbnail">
-        <p>Upcoming Events:</p>
-        <img src="paris.jpg" alt="Paris" width="400" height="300">
-        <p><strong>Paris</strong></p>
-        <p>Fri. 27 November 2015</p>
+        <p>Próximos Eventos :</p>
+        <img src="assets/evento.jpg" alt="Paris" width="400" height="300">
+        <p><strong>Aulão Aeróbica - Farol da Barra</strong></p>
+        <p>Sexta 23 Março 2018</p>
         <button class="btn btn-primary">Info</button>
       </div>      
       <div class="well">
-        <p>ADS</p>
-      </div>
-      <div class="well">
-        <p>ADS</p>
+        <p>PUBLICIDADE</p>
       </div>
     </div>
   </div>
 </div>
 
 <footer class="container-fluid text-center">
-  <p>Footer Text</p>
+  <p>Altered Body 2018</p>
 </footer>
 
+<div id="ModalPadrao3" class="modal fade" tabindex="0" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Título</h4>
+      </div>
+      <div class="modal-body">
+        <canvas id="myChart" width="300" height="300"></canvas>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+      </div>
+    </div>
+  </div>
+</div>
 </body>
 </html>
 
